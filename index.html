@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Guide</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <input
+          type="text"
+          placeholder="Movie Name"
+          class="input"
+          id="movie-input"
+        />
+        <button class="btn" id="btn-search">Search</button>
+      </form>
+
+      <div class="movie">
+        <div class="movie__img"></div>
+        <div class="movie__details">
+          <h1 class="movie__title">The Dark Knight</h1>
+          <div class="movie__rating">9.0</div>
+          <div class="movie__minor-details">
+            <div class="movie__classification">PG-13</div>
+            <div class="movie__release-yer">2008</div>
+            <div class="movie__duration">152 min</div>
+          </div>
+          <div class="movie__genres">
+            <div class="movie__genre">Action</div>
+            <div class="movie__genre">Crime</div>
+            <div class="movie__genre">Drama</div>
+          </div>
+        </div>
+        <div class="movie__plot">
+          <h2 class="plot__title">Plot:</h2>
+          <p class="plot__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo itaque
+            at maxime? Suscipit doloremque laudantium eum incidunt aliquid
+            quisquam iure adipisci laborum. Fugit quia quis eum? Cum magnam
+            voluptatibus praesentium consectetur illum accusantium ratione et!
+            Odit fugit sequi quidem animi? Tenetur nihil officiis quam iste,
+            animi voluptates vel ab minus!
+          </p>
+        </div>
+        <div class="movie__cast">
+          <h2 class="cast__title">Cast:</h2>
+          <p class="cast__paragraph">
+            Christian Bale, Heath Ledger, Aaron Eckhart
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
