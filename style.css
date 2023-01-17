@@ -13,6 +13,7 @@ body {
   background-attachment: fixed;
   display: grid;
   min-height: 100vh;
+  padding: 4rem 0;
 }
 
 .container {
@@ -24,14 +25,14 @@ body {
   align-self: center;
   justify-self: center;
   padding: 2rem;
-  margin: 4rem;
   gap: 1rem;
   max-width: min-content;
 }
 
 .form {
   display: grid;
-  grid-template-columns: 1fr 20%;
+  grid-auto-flow: column;
+  grid-template-columns: 4fr 1fr;
   gap: 1rem;
 }
 
@@ -67,6 +68,7 @@ body {
   font-weight: bold;
   font-size: 1.05rem;
   box-shadow: 0 0 10px white;
+  padding: 1rem 2rem;
 }
 
 .btn:hover {
@@ -108,6 +110,7 @@ body {
   justify-self: center;
   align-self: center;
   gap: 1rem;
+  margin: 0 4rem;
 }
 
 .movie__rating {
@@ -118,11 +121,11 @@ body {
 .movie__minor-details {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: repeat(3, 1fr);
   justify-self: center;
   gap: 1rem;
   text-align: center;
   color: rgb(150, 150, 150);
+  grid-auto-columns: max-content;
 }
 
 .movie__genres {
@@ -130,6 +133,7 @@ body {
   grid-auto-flow: column;
   gap: 1rem;
   grid-auto-columns: max-content;
+  justify-content: center;
 }
 
 .movie__genre {
@@ -182,7 +186,6 @@ p {
       "plot"
       "cast";
     gap: 1rem;
-    
   }
 
   .movie__img {
