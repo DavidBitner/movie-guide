@@ -2,7 +2,7 @@ const movieInfoUI = document.querySelector(`.movie`);
 const form = document.querySelector(`#form`);
 
 async function queryMovie(movieName) {
-  const url = `http://omdbapi.com/?apikey=b03ed45c&t=${movieName}`;
+  const url = `https://omdbapi.com/?apikey=b03ed45c&t=${movieName}`;
   const data = await fetch(url);
   const result = await data.json();
 
