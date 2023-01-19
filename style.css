@@ -27,6 +27,7 @@ body {
   padding: 2rem;
   gap: 1rem;
   max-width: min-content;
+  margin: 2rem;
 }
 
 .form {
@@ -178,6 +179,10 @@ p {
 }
 
 @media only screen and (max-width: 900px) {
+  html {
+    font-size: 60%;
+  }
+
   .movie {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -191,5 +196,14 @@ p {
   .movie__img {
     justify-self: center;
     align-self: center;
+    max-height: 200px;
+  }
+
+  .movie__genre {
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    font-weight: normal;
+    justify-self: center;
   }
 }
